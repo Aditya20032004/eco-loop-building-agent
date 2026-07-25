@@ -1,80 +1,69 @@
 import os
 import sys
-import json
+import pandas as pd
 from src.config import IDF_PATH, EPW_PATH, OUTPUT_DIR
 
 try:
     from pyenergyplus.api import EnergyPlusAPI
 except ImportError:
-    print("❌ Error: Could not import pyenergyplus. Check EPLUS_DIR in config.py")
+    print("❌ Error: pyenergyplus not found.")
     sys.exit(1)
 
 class EcoLoopRunner:
     def __init__(self):
         self.api = EnergyPlusAPI()
         self.state = self.api.state_manager.new_state()
-        
         self.handles_initialized = False
         self.handles = {}
         
-        self.zones_to_monitor = ["Core_bottom", "Core_mid"]
-        self.last_printed_day = -1  
+        # New: Data storage for our custom CSV
+        self.history = []
+        self.last_logged_hour = -1
 
     def init_handles(self, state):
-        for zone in self.zones_to_monitor:
-            handle = self.api.exchange.get_variable_handle(
-                state, 
-                "Zone Mean Air Temperature", 
-                zone
-            )
-            
-            if handle == -1:
-                print(f"⚠️ Warning: Could not get handle for temperature in {zone}")
-            else:
-                self.handles[f"temp_{zone}"] = handle
-                
+        self.handles["temp_Core_bottom"] = self.api.exchange.get_variable_handle(
+            state, "Zone Mean Air Temperature", "Core_bottom"
+        )
+        self.handles["elec_facility"] = self.api.exchange.get_meter_handle(
+            state, "Electricity:Facility"
+        )
         self.handles_initialized = True
-        print("✅ Telemetry handles initialized successfully.")
 
     def my_callback(self, state):
-        if not self.api.exchange.api_data_fully_ready(state):
+        if not self.api.exchange.api_data_fully_ready(state) or self.api.exchange.warmup_flag(state):
             return
             
         if not self.handles_initialized:
             self.init_handles(state)
-        
+            
         day = self.api.exchange.day_of_year(state)
         hour = self.api.exchange.hour(state)
-        minute = self.api.exchange.minutes(state)
         
-        telemetry = {
-            "day": day,
-            "time": f"{hour:02d}:{minute:02d}",
-            "temperatures": {}
-        }
-        
-        for key, handle in self.handles.items():
-            val = self.api.exchange.get_variable_value(state, handle)
-            telemetry["temperatures"][key] = round(val, 2)
+        # Log data exactly once per simulated hour
+        if hour != self.last_logged_hour:
+            self.last_logged_hour = hour
             
-        if hour == 12 and day != self.last_printed_day:
-            print(f"Live Telemetry -> {json.dumps(telemetry)}")
-            self.last_printed_day = day
+            temp = self.api.exchange.get_variable_value(state, self.handles["temp_Core_bottom"])
+            elec = self.api.exchange.get_meter_value(state, self.handles["elec_facility"])
+            
+            self.history.append({
+                "Day": day,
+                "Hour": hour,
+                "Core_bottom:Zone Mean Air Temperature": temp,
+                "Electricity:Facility": elec
+            })
 
     def run(self):
-        print("Starting EnergyPlus Baseline Simulation with Telemetry...")
-        
-        self.api.runtime.callback_begin_zone_timestep_after_init_heat_balance(
-            self.state, self.my_callback
-        )
-        
+        print("Starting Baseline Simulation...")
+        self.api.runtime.callback_end_zone_timestep_after_zone_reporting(self.state, self.my_callback)
         os.makedirs(OUTPUT_DIR, exist_ok=True)
-        cmd_args = ['-w', EPW_PATH, '-d', OUTPUT_DIR, IDF_PATH]
+        self.api.runtime.run_energyplus(self.state, ['-w', EPW_PATH, '-d', OUTPUT_DIR, IDF_PATH])
         
-        result = self.api.runtime.run_energyplus(self.state, cmd_args)
-        
-        print(f"\n✅ Simulation finished with exit code {result}")
-        self.api.state_manager.delete_state(self.state)
+        # Save our custom CSV!
+        df = pd.DataFrame(self.history)
+        csv_path = os.path.join(OUTPUT_DIR, "eplusout.csv")
+        df.to_csv(csv_path, index=False)
+        print(f"✅ Baseline Data saved to {csv_path}")
 
 if __name__ == "__main__":
     runner = EcoLoopRunner()
