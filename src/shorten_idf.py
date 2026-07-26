@@ -25,7 +25,7 @@ def prepare_idf():
     rp.Begin_Month = 7
     rp.Begin_Day_of_Month = 1
     rp.End_Month = 7
-    rp.End_Day_of_Month = 3
+    rp.End_Day_of_Month = 7
     
     # --- 2. Force CSV Output Logging ---
     print("Injecting Output:Variable and Output:Meter objects...")
