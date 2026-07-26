@@ -147,7 +147,13 @@ class EcoLoopOrchestrator:
                 }
             }
             
-            print(f"\n--- [Day {day}, Hour {hour:02d}:00] Firing Predictive Multi-Zone Agent ---")
+            print(f"\n{'='*60}")
+            print(f"🚀 --- [Day {day}, Hour {hour:02d}:00] Firing Predictive Agent ---")
+            
+            # --- NEW VISUALIZATION: Print Outgoing Data ---
+            print(f"📡 OUTGOING TELEMETRY:\n{json.dumps(telemetry, indent=2)}")
+            print("⏳ Waiting for LLM reasoning...")
+            # ----------------------------------------------
             
             prompt = self.tools.generate_agent_prompt(json.dumps(telemetry))
             llm_response, _ = self.agent.prompt_llm(prompt)
@@ -171,6 +177,14 @@ class EcoLoopOrchestrator:
                         raise ValueError("No JSON object detected in LLM response.")
                         
                 parsed_actions = decision.get("actions", [])
+                
+                # --- NEW VISUALIZATION: Print Incoming AI Decision ---
+                print(f"🧠 AI DECISION RECEIVED:")
+                for action in parsed_actions:
+                    print(f"   ↳ {action.get('zone')}: Target {action.get('target_temp')}°C")
+                print("-" * 60)
+                # ----------------------------------------------------
+                
                 for action in parsed_actions:
                     zone = action.get("zone")
                     if zone in self.zones:
@@ -183,6 +197,10 @@ class EcoLoopOrchestrator:
                             
                             # MEMORY UPDATE: Record the successful command so the next hour can step down from it
                             self.last_setpoints[zone] = safe_target
+                            
+                            # --- NEW VISUALIZATION: Confirm Injection ---
+                            print(f"   ⚡ INJECTED ACTUATOR -> {zone}: {safe_target}°C")
+                            # --------------------------------------------
             except Exception as e:
                 print(f"  ⚠️ Action Execution Error: {e}")
 

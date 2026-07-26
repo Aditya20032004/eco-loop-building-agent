@@ -29,3 +29,6 @@ Savings are calculated deterministically. The system runs a true comparative wor
 * **Baseline:** A rule-based baseline is generated via `sim_run`.
 * **AI Run:** The agentic loop generates a secondary dataset.
 * **Dashboard:** The Streamlit UI ingests both datasets to output exact kWh energy reduction and grid carbon emissions avoidance without relying on fabricated scaling factors.
+
+## 6. Handling Lengthy Simulation Logs:
+EnergyPlus natively generates massive, multi-megabyte output logs (e.g., .eso, .csv). To prevent blowing out the LLM's context window and skyrocketing inference latency, the orchestrator completely bypasses post-run log parsing. Instead, the PyEnergyPlus state manager intercepts runtime memory during the simulation. It distills only the current hour's localized telemetry into a lightweight, compressed JSON payload. This ensures the LLM only ever reasons over a strict "state-in-time" snapshot rather than parsing thousands of lines of historical simulation logs.

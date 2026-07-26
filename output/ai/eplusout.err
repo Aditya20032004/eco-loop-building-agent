@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 22.1.0-ed759b17ee, YMD=2026.07.26 15:04,
+Program Version,EnergyPlus, Version 22.1.0-ed759b17ee, YMD=2026.07.26 17:59,
    ** Warning ** ProcessScheduleInput: Schedule:Constant="VAV_BOT MAX OA FRACTION", Blank Schedule Type Limits Name input -- will not be validated.
    ** Warning ** ProcessScheduleInput: Schedule:Constant="VAV_MID MAX OA FRACTION", Blank Schedule Type Limits Name input -- will not be validated.
    ** Warning ** ProcessScheduleInput: Schedule:Constant="VAV_TOP MAX OA FRACTION", Blank Schedule Type Limits Name input -- will not be validated.
@@ -2005,83 +2005,3 @@ Program Version,EnergyPlus, Version 22.1.0-ed759b17ee, YMD=2026.07.26 15:04,
    **   ~~~   ** ..i.e., Variable name=MIDFLOOR_PLENUM:ZONE PEOPLE OCCUPANT COUNT not valid for this simulation.
    ** Warning ** Processing Monthly Tabular Reports: ZoneTemperatureOscillationReportMonthly
    **   ~~~   ** ..Variable name=ZONE PEOPLE OCCUPANT COUNT not valid for this simulation.
-   **   ~~~   ** ..i.e., Variable name=FIRSTFLOOR_PLENUM:ZONE PEOPLE OCCUPANT COUNT not valid for this simulation.
-   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemEnergyAndWaterUseMonthly
-   **   ~~~   ** ..Variable name=AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
-   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemEnergyAndWaterUseMonthly
-   **   ~~~   ** ..Variable name=AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
-   **   ~~~   ** ..i.e., Variable name=PACU_VAV_BOT:AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
-   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemEnergyAndWaterUseMonthly
-   **   ~~~   ** ..Variable name=AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
-   **   ~~~   ** ..i.e., Variable name=PACU_VAV_MID:AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
-   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemEnergyAndWaterUseMonthly
-   **   ~~~   ** ..Variable name=AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
-   **   ~~~   ** ..i.e., Variable name=PACU_VAV_TOP:AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
-   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
-   **   ~~~   ** ..Variable name=AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
-   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
-   **   ~~~   ** ..Variable name=AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
-   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
-   **   ~~~   ** ..Variable name=AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
-   **   ~~~   ** ..i.e., Variable name=PACU_VAV_BOT:AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
-   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
-   **   ~~~   ** ..Variable name=AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
-   **   ~~~   ** ..i.e., Variable name=PACU_VAV_BOT:AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
-   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
-   **   ~~~   ** ..Variable name=AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
-   **   ~~~   ** ..i.e., Variable name=PACU_VAV_MID:AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
-   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
-   **   ~~~   ** ..Variable name=AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
-   **   ~~~   ** ..i.e., Variable name=PACU_VAV_MID:AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
-   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
-   **   ~~~   ** ..Variable name=AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
-   **   ~~~   ** ..i.e., Variable name=PACU_VAV_TOP:AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
-   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
-   **   ~~~   ** ..Variable name=AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
-   **   ~~~   ** ..i.e., Variable name=PACU_VAV_TOP:AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
-   ** Severe  ** Transformer Overloaded
-   **   ~~~   ** Entered in ElectricLoadCenter:Transformer =TRANSFORMER 1
-   ** Warning ** Entered Humidity Ratio invalid (PsyTwbFnTdbWPb)
-   **   ~~~   **  Routine=ReportCoilSelection::doFinalProcessingOfCoilData
-   **   ~~~   **  Environment=RUNPERIOD 1, at Simulation time=07/07 24:00 - 24:03
-   **   ~~~   **  Dry-Bulb= 18.40 Humidity Ratio= -998.999 Pressure= 101228.87
-   **   ~~~   ** Humidity Ratio= -998.9999 ... Humidity Ratio set to .00001
-   ************* Simulation Error Summary *************
-   ************* There are 32 unused schedules in input.
-   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
-   *************
-   ************* ===== Recurring Error Summary =====
-   ************* The following recurring error messages occurred.
-   *************
-   *************  ** Severe  ** Transformer Overloaded: Entered in ElectricLoadCenter:Transformer =TRANSFORMER 1
-   *************  **   ~~~   **   This error occurred 1309 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************
-   *************  ** Warning ** Entered Humidity Ratio invalid (PsyTwbFnTdbWPb)
-   *************  **   ~~~   **   This error occurred 14 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=-999. []  Min=-999. []
-   *************
-   *************
-   ************* ===== Final Error Summary =====
-   ************* The following error categories occurred.  Consider correcting or noting.
-   ************* Loads Initialization did not Converge
-   ************* ..1) very high thermal mass such as very thick concrete (solution: increase max number of warmup
-   ************* ..   days in the BUILDING object);
-   ************* ..2) moderate mass and inadequate space conditioning such that the building keeps getting warmer
-   ************* ..   and warmer on successive days (solution: add HVAC, check building thermal properties,
-   ************* ..   check if infiltration is included, make sure HVAC properly controlled);
-   ************* ..3) a soil layer modeled below the concrete slab - (solution remove this layer and read about
-   ************* ..   ground temperatures in the Auxiliary Programs document).
-   ************* ..4) unreasonable (too small) limits in the BUILDING object for temperature (.4 default) or
-   ************* ..   loads tolerances (.04 default)
-   ************* Nominally Unused Constructions
-   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
-   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
-   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
-   *************
-   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 8 Severe Errors.
-   ************* EnergyPlus Sizing Error Summary. During Sizing: 4 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 849 Warning; 1318 Severe Errors; Elapsed Time=01hr 35min 44.03sec
