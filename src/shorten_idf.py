@@ -1,6 +1,6 @@
 import os
 import sys
-from config import IDF_PATH, EPLUS_DIR, DATA_DIR
+from src.config import IDF_PATH, EPLUS_DIR, DATA_DIR
 
 try:
     from eppy.modeleditor import IDF

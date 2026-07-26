@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 22.1.0-ed759b17ee, YMD=2026.07.26 12:46
+Program Version,EnergyPlus, Version 22.1.0-ed759b17ee, YMD=2026.07.26 15:04
 ! <Version>, Version ID
  Version, 22.1
 ! <Timesteps per Hour>, #TimeSteps, Minutes per TimeStep {minutes}
@@ -955,3 +955,34 @@ HeatTransfer Surface,iz-CORE_MID_ZN_5_WALL_WEST,Wall,,CTF - ConductionTransferFu
 HeatTransfer Surface,PERIMETER_MID_ZN_4_FLOOR,Floor,,CTF - ConductionTransferFunction,INT_SLAB_FLOOR,3.839,1.986,,131.25,131.25,131.25,270.00,180.00,24.13,6.47,0.00,iz-PERIMETER_MID_ZN_4_FLOOR,Other/Same Surface Int Conv,ASHRAETARP,NoSun,NoWind,1.00,0.00,1.00,0.00,4
 HeatTransfer Surface,PERIMETER_MID_ZN_4_CEILING,Roof,,CTF - ConductionTransferFunction,DROPCEILING,4.488,2.432,,131.25,131.25,131.25,90.00,0.00,24.13,6.47,0.00,iz-PERIMETER_MID_ZN_4_CEILING,Other/Same Surface Int Conv,ASHRAETARP,NoSun,NoWind,0.00,1.00,0.00,1.00,4
 HeatTransfer Surface,PERIMETER_MID_ZN_4_INTERNALMASS_1,Internal Mass,,CTF - ConductionTransferFunction,INTERIORFURNISHINGS,0.800,0.800,,262.51,262.51,262.51,0.00,90.00,262.51,1.00,0.00,PERIMETER_MID_ZN_4_INTERNALMASS_1,Other/Same Surface Int Conv,ASHRAETARP,NoSun,NoWind,0.00,0.50,1.00,0.00,0
+! <Environment>,Environment Name,Environment Type, Start Date, End Date, Start DayOfWeek, Duration {#days}, Source:Start DayOfWeek,  Use Daylight Saving, Use Holidays, Apply Weekend Holiday Rule,  Use Rain Values, Use Snow Values, Sky Temperature Model
+! <Environment:Special Days>, Special Day Name, Special Day Type, Source, Start Date, Duration {#days}
+! <Environment:Daylight Saving>, Daylight Saving Indicator, Source, Start Date, End Date
+! <Environment:WarmupDays>, NumberofWarmupDays
+Environment,RUNPERIOD 1,WeatherFileRunPeriod,07/01/2007,07/07/2007,Sunday,7,Use RunPeriod Specified Day,No,No,No,Yes,Yes,Clark and Allen
+Environment:Daylight Saving,Yes,InputFile,03/11,11/04
+Environment:Special Days,NEW YEARS DAY,Holiday,InputFile,01/01,  1Environment:Special Days,VETERANS DAY,Holiday,InputFile,11/11,  1Environment:Special Days,CHRISTMAS,Holiday,InputFile,12/25,  1Environment:Special Days,INDEPENDENCE DAY,Holiday,InputFile,07/04,  1Environment:Special Days,MLK DAY,Holiday,InputFile,01/15,  1Environment:Special Days,PRESIDENTS DAY,Holiday,InputFile,02/19,  1Environment:Special Days,MEMORIAL DAY,Holiday,InputFile,05/28,  1Environment:Special Days,LABOR DAY,Holiday,InputFile,09/03,  1Environment:Special Days,COLUMBUS DAY,Holiday,InputFile,10/08,  1Environment:Special Days,THANKSGIVING,Holiday,InputFile,11/22,  1Environment:WarmupDays, 25
+! <Tabular Report>,Style,Unit Conversion
+Tabular Report,Commaandhtml,commaandhtml
+! <Warmup Convergence Information>,Zone Name,Environment Type/Name,Average Warmup Temperature Difference {deltaC},Std Dev Warmup Temperature Difference {deltaC},Max Temperature Pass/Fail Convergence,Min Temperature Pass/Fail Convergence,Average Warmup Load Difference {W},Std Dev Warmup Load Difference {W},Heating Load Pass/Fail Convergence,Cooling Load Pass/Fail Convergence
+ Warmup Convergence Information,CORE_BOTTOM,RunPeriod: RUNPERIOD 1,0.2987744118,0.3861357234,Pass,Pass,0.2780258572,0.4847080919,Pass,Pass
+ Warmup Convergence Information,TOPFLOOR_PLENUM,RunPeriod: RUNPERIOD 1,0.1622519815,0.2085226872,Pass,Pass,0.2610458618,0.4342753350,Pass,Pass
+ Warmup Convergence Information,MIDFLOOR_PLENUM,RunPeriod: RUNPERIOD 1,0.1097900127,9.1156131261E-002,Pass,Pass,0.3904198442,0.4907152771,Fail,Pass
+ Warmup Convergence Information,FIRSTFLOOR_PLENUM,RunPeriod: RUNPERIOD 1,8.4757455445E-002,9.7044652113E-002,Pass,Pass,0.3152353094,0.5322330986,Pass,Pass
+ Warmup Convergence Information,CORE_MID,RunPeriod: RUNPERIOD 1,0.2887379920,0.2885266176,Pass,Pass,0.3503615243,0.4736811198,Pass,Pass
+ Warmup Convergence Information,CORE_TOP,RunPeriod: RUNPERIOD 1,0.2599419427,0.3236870776,Pass,Pass,0.2441860090,0.4256577405,Pass,Fail
+ Warmup Convergence Information,PERIMETER_TOP_ZN_3,RunPeriod: RUNPERIOD 1,0.3563469491,0.4443176285,Pass,Fail,0.2459255052,0.4234111794,Pass,Pass
+ Warmup Convergence Information,PERIMETER_TOP_ZN_2,RunPeriod: RUNPERIOD 1,0.5422159890,0.6992627734,Pass,Pass,0.2490784126,0.4229851913,Pass,Pass
+ Warmup Convergence Information,PERIMETER_TOP_ZN_1,RunPeriod: RUNPERIOD 1,0.4017667305,0.5011952055,Pass,Pass,0.2466498727,0.4220380508,Pass,Pass
+ Warmup Convergence Information,PERIMETER_TOP_ZN_4,RunPeriod: RUNPERIOD 1,0.5382149572,0.7225346597,Pass,Fail,0.2488696505,0.4195096373,Pass,Pass
+ Warmup Convergence Information,PERIMETER_BOT_ZN_3,RunPeriod: RUNPERIOD 1,0.3092794801,0.3793905550,Pass,Pass,0.2517587772,0.4308498007,Pass,Pass
+ Warmup Convergence Information,PERIMETER_BOT_ZN_2,RunPeriod: RUNPERIOD 1,0.4881252490,0.6397260877,Pass,Pass,0.2559339790,0.4299181271,Pass,Pass
+ Warmup Convergence Information,PERIMETER_BOT_ZN_1,RunPeriod: RUNPERIOD 1,0.3625937882,0.4457089016,Pass,Pass,0.2535630781,0.4299045306,Pass,Pass
+ Warmup Convergence Information,PERIMETER_BOT_ZN_4,RunPeriod: RUNPERIOD 1,0.4840524269,0.6256109493,Pass,Pass,0.2558065148,0.4277078565,Pass,Pass
+ Warmup Convergence Information,PERIMETER_MID_ZN_3,RunPeriod: RUNPERIOD 1,0.5252093296,0.5680502023,Pass,Pass,0.3766604761,0.4730502888,Pass,Fail
+ Warmup Convergence Information,PERIMETER_MID_ZN_2,RunPeriod: RUNPERIOD 1,0.6152711559,0.6503779397,Pass,Pass,0.3542004236,0.4681501071,Pass,Fail
+ Warmup Convergence Information,PERIMETER_MID_ZN_1,RunPeriod: RUNPERIOD 1,0.5200269010,0.5674221670,Pass,Pass,0.3580071261,0.4647696955,Pass,Fail
+ Warmup Convergence Information,PERIMETER_MID_ZN_4,RunPeriod: RUNPERIOD 1,0.6374179120,0.6704090338,Pass,Pass,0.3558610420,0.4671510314,Pass,Fail
+! <Program Control Information:Threads/Parallel Sims>, Threading Supported,Maximum Number of Threads, Env Set Threads (OMP_NUM_THREADS), EP Env Set Threads (EP_OMP_NUM_THREADS), IDF Set Threads, Number of Threads Used (Interior Radiant Exchange), Number Nominal Surfaces, Number Parallel Sims
+Program Control:Threads/Parallel Sims, No,1, N/A, N/A, N/A, N/A, N/A, N/A
+End of Data

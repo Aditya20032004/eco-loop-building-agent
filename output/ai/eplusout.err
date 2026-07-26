@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 22.1.0-ed759b17ee, YMD=2026.07.26 12:46,
+Program Version,EnergyPlus, Version 22.1.0-ed759b17ee, YMD=2026.07.26 15:04,
    ** Warning ** ProcessScheduleInput: Schedule:Constant="VAV_BOT MAX OA FRACTION", Blank Schedule Type Limits Name input -- will not be validated.
    ** Warning ** ProcessScheduleInput: Schedule:Constant="VAV_MID MAX OA FRACTION", Blank Schedule Type Limits Name input -- will not be validated.
    ** Warning ** ProcessScheduleInput: Schedule:Constant="VAV_TOP MAX OA FRACTION", Blank Schedule Type Limits Name input -- will not be validated.
@@ -159,61 +159,55 @@ Program Version,EnergyPlus, Version 22.1.0-ed759b17ee, YMD=2026.07.26 12:46,
    ************* All Return Air Paths passed integrity testing
    ************* No node connection errors were found.
    ************* Beginning Simulation
-   ** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone="CORE_BOTTOM" did not converge after 25 warmup days.
+   ** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone="MIDFLOOR_PLENUM" did not converge after 25 warmup days.
    **   ~~~   ** See Warmup Convergence Information in .eio file for details.
    **   ~~~   ** ...Environment(RunPeriod)="RUNPERIOD 1"
-   **   ~~~   ** ..Max Temp Comparison = 1.70E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
-   **   ~~~   ** ..Min Temp Comparison = 4.03E-003 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
-   **   ~~~   ** ..Max Heat Load Comparison = 2.0072E-002 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
-   **   ~~~   ** ..Max Cool Load Comparison = 8.2840E-002 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
-   ** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone="TOPFLOOR_PLENUM" did not converge after 25 warmup days.
-   **   ~~~   ** ...Environment(RunPeriod)="RUNPERIOD 1"
-   **   ~~~   ** ..Max Temp Comparison = 0.11 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
-   **   ~~~   ** ..Min Temp Comparison = 4.31E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
-   **   ~~~   ** ..Max Heat Load Comparison = 0.7096 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
-   **   ~~~   ** ..Max Cool Load Comparison = 2.5019E-002 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
-   ** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone="MIDFLOOR_PLENUM" did not converge after 25 warmup days.
-   **   ~~~   ** ...Environment(RunPeriod)="RUNPERIOD 1"
-   **   ~~~   ** ..Max Temp Comparison = 4.09E-003 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
+   **   ~~~   ** ..Max Temp Comparison = 3.66E-003 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
    **   ~~~   ** ..Min Temp Comparison = 0.11 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
-   **   ~~~   ** ..Max Heat Load Comparison = 0.5990 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
-   **   ~~~   ** ..Max Cool Load Comparison = 1.0143E-002 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
-   ** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone="PERIMETER_BOT_ZN_3" did not converge after 25 warmup days.
+   **   ~~~   ** ..Max Heat Load Comparison = 1.4965 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
+   **   ~~~   ** ..Max Cool Load Comparison = 9.7674E-003 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
+   ** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone="CORE_TOP" did not converge after 25 warmup days.
    **   ~~~   ** ...Environment(RunPeriod)="RUNPERIOD 1"
-   **   ~~~   ** ..Max Temp Comparison = 5.72E-003 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
-   **   ~~~   ** ..Min Temp Comparison = 1.04E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
-   **   ~~~   ** ..Max Heat Load Comparison = 1.4339E-003 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
-   **   ~~~   ** ..Max Cool Load Comparison = 5.3013E-002 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
-   ** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone="PERIMETER_BOT_ZN_2" did not converge after 25 warmup days.
+   **   ~~~   ** ..Max Temp Comparison = 6.00E-003 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
+   **   ~~~   ** ..Min Temp Comparison = 0.14 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
+   **   ~~~   ** ..Max Heat Load Comparison = 2.3869E-004 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
+   **   ~~~   ** ..Max Cool Load Comparison = 4.9504E-002 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
+   ** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone="PERIMETER_TOP_ZN_3" did not converge after 25 warmup days.
    **   ~~~   ** ...Environment(RunPeriod)="RUNPERIOD 1"
-   **   ~~~   ** ..Max Temp Comparison = 2.25E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
-   **   ~~~   ** ..Min Temp Comparison = 2.74E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
-   **   ~~~   ** ..Max Heat Load Comparison = 1.3363E-003 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
-   **   ~~~   ** ..Max Cool Load Comparison = 5.1171E-002 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
+   **   ~~~   ** ..Max Temp Comparison = 4.55E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
+   **   ~~~   ** ..Min Temp Comparison = 0.21 vs Temperature Convergence Tolerance=0.20 - Fail Convergence
+   **   ~~~   ** ..Max Heat Load Comparison = 1.1130E-004 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
+   **   ~~~   ** ..Max Cool Load Comparison = 3.7817E-002 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
+   ** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone="PERIMETER_TOP_ZN_4" did not converge after 25 warmup days.
+   **   ~~~   ** ...Environment(RunPeriod)="RUNPERIOD 1"
+   **   ~~~   ** ..Max Temp Comparison = 1.53E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
+   **   ~~~   ** ..Min Temp Comparison = 0.20 vs Temperature Convergence Tolerance=0.20 - Fail Convergence
+   **   ~~~   ** ..Max Heat Load Comparison = 1.0862E-004 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
+   **   ~~~   ** ..Max Cool Load Comparison = 1.4688E-003 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
    ** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone="PERIMETER_MID_ZN_3" did not converge after 25 warmup days.
    **   ~~~   ** ...Environment(RunPeriod)="RUNPERIOD 1"
-   **   ~~~   ** ..Max Temp Comparison = 9.90E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
-   **   ~~~   ** ..Min Temp Comparison = 2.84E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
+   **   ~~~   ** ..Max Temp Comparison = 9.94E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
+   **   ~~~   ** ..Min Temp Comparison = 5.06E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
    **   ~~~   ** ..Max Heat Load Comparison = 5.2413E-004 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
-   **   ~~~   ** ..Max Cool Load Comparison = 0.3666 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
+   **   ~~~   ** ..Max Cool Load Comparison = 0.5805 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
    ** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone="PERIMETER_MID_ZN_2" did not converge after 25 warmup days.
    **   ~~~   ** ...Environment(RunPeriod)="RUNPERIOD 1"
-   **   ~~~   ** ..Max Temp Comparison = 7.30E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
-   **   ~~~   ** ..Min Temp Comparison = 1.47E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
+   **   ~~~   ** ..Max Temp Comparison = 7.28E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
+   **   ~~~   ** ..Min Temp Comparison = 1.44E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
    **   ~~~   ** ..Max Heat Load Comparison = 4.9291E-004 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
-   **   ~~~   ** ..Max Cool Load Comparison = 7.1929E-002 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
+   **   ~~~   ** ..Max Cool Load Comparison = 7.6279E-002 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
    ** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone="PERIMETER_MID_ZN_1" did not converge after 25 warmup days.
    **   ~~~   ** ...Environment(RunPeriod)="RUNPERIOD 1"
-   **   ~~~   ** ..Max Temp Comparison = 5.56E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
-   **   ~~~   ** ..Min Temp Comparison = 2.28E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
+   **   ~~~   ** ..Max Temp Comparison = 6.15E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
+   **   ~~~   ** ..Min Temp Comparison = 4.27E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
    **   ~~~   ** ..Max Heat Load Comparison = 5.4533E-004 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
-   **   ~~~   ** ..Max Cool Load Comparison = 0.3500 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
+   **   ~~~   ** ..Max Cool Load Comparison = 0.5583 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
    ** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone="PERIMETER_MID_ZN_4" did not converge after 25 warmup days.
    **   ~~~   ** ...Environment(RunPeriod)="RUNPERIOD 1"
-   **   ~~~   ** ..Max Temp Comparison = 1.70E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
-   **   ~~~   ** ..Min Temp Comparison = 0.11 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
+   **   ~~~   ** ..Max Temp Comparison = 1.68E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
+   **   ~~~   ** ..Min Temp Comparison = 9.00E-002 vs Temperature Convergence Tolerance=0.20 - Pass Convergence
    **   ~~~   ** ..Max Heat Load Comparison = 5.1044E-004 vs Loads Convergence Tolerance=4.00E-002 - Pass Convergence
-   **   ~~~   ** ..Max Cool Load Comparison = 0.1188 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
+   **   ~~~   ** ..Max Cool Load Comparison = 0.1279 vs Loads Convergence Tolerance=4.00E-002 - Fail Convergence
    ** Warning ** In Output:Table:Monthly 'SpaceGainsMonthly' invalid Variable or Meter Name 'ZONE GAS EQUIPMENT TOTAL HEATING ENERGY'
    ** Warning ** In Output:Table:Monthly 'SpaceGainsMonthly' invalid Variable or Meter Name 'ZONE HOT WATER EQUIPMENT TOTAL HEATING ENERGY'
    ** Warning ** In Output:Table:Monthly 'SpaceGainsMonthly' invalid Variable or Meter Name 'ZONE STEAM EQUIPMENT TOTAL HEATING ENERGY'
@@ -2003,3 +1997,91 @@ Program Version,EnergyPlus, Version 22.1.0-ed759b17ee, YMD=2026.07.26 12:46,
    ** Warning ** Processing Monthly Tabular Reports: CoilReportMonthly
    **   ~~~   ** ..Variable name=COOLING COIL WETTED AREA FRACTION not valid for this simulation.
    **   ~~~   ** ..i.e., Variable name=PACU_VAV_TOP COOLING COIL:COOLING COIL WETTED AREA FRACTION not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: ZoneTemperatureOscillationReportMonthly
+   **   ~~~   ** ..Variable name=ZONE PEOPLE OCCUPANT COUNT not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=TOPFLOOR_PLENUM:ZONE PEOPLE OCCUPANT COUNT not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: ZoneTemperatureOscillationReportMonthly
+   **   ~~~   ** ..Variable name=ZONE PEOPLE OCCUPANT COUNT not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=MIDFLOOR_PLENUM:ZONE PEOPLE OCCUPANT COUNT not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: ZoneTemperatureOscillationReportMonthly
+   **   ~~~   ** ..Variable name=ZONE PEOPLE OCCUPANT COUNT not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=FIRSTFLOOR_PLENUM:ZONE PEOPLE OCCUPANT COUNT not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemEnergyAndWaterUseMonthly
+   **   ~~~   ** ..Variable name=AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemEnergyAndWaterUseMonthly
+   **   ~~~   ** ..Variable name=AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=PACU_VAV_BOT:AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemEnergyAndWaterUseMonthly
+   **   ~~~   ** ..Variable name=AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=PACU_VAV_MID:AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemEnergyAndWaterUseMonthly
+   **   ~~~   ** ..Variable name=AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=PACU_VAV_TOP:AIR SYSTEM NATURAL GAS ENERGY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
+   **   ~~~   ** ..Variable name=AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
+   **   ~~~   ** ..Variable name=AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
+   **   ~~~   ** ..Variable name=AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=PACU_VAV_BOT:AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
+   **   ~~~   ** ..Variable name=AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=PACU_VAV_BOT:AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
+   **   ~~~   ** ..Variable name=AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=PACU_VAV_MID:AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
+   **   ~~~   ** ..Variable name=AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=PACU_VAV_MID:AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
+   **   ~~~   ** ..Variable name=AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=PACU_VAV_TOP:AIR SYSTEM HEATING COIL NATURAL GAS ENERGY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: AirLoopSystemComponentEnergyUseMonthly
+   **   ~~~   ** ..Variable name=AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=PACU_VAV_TOP:AIR SYSTEM HUMIDIFIER NATURAL GAS ENERGY not valid for this simulation.
+   ** Severe  ** Transformer Overloaded
+   **   ~~~   ** Entered in ElectricLoadCenter:Transformer =TRANSFORMER 1
+   ** Warning ** Entered Humidity Ratio invalid (PsyTwbFnTdbWPb)
+   **   ~~~   **  Routine=ReportCoilSelection::doFinalProcessingOfCoilData
+   **   ~~~   **  Environment=RUNPERIOD 1, at Simulation time=07/07 24:00 - 24:03
+   **   ~~~   **  Dry-Bulb= 18.40 Humidity Ratio= -998.999 Pressure= 101228.87
+   **   ~~~   ** Humidity Ratio= -998.9999 ... Humidity Ratio set to .00001
+   ************* Simulation Error Summary *************
+   ************* There are 32 unused schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   *************
+   ************* ===== Recurring Error Summary =====
+   ************* The following recurring error messages occurred.
+   *************
+   *************  ** Severe  ** Transformer Overloaded: Entered in ElectricLoadCenter:Transformer =TRANSFORMER 1
+   *************  **   ~~~   **   This error occurred 1309 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************
+   *************  ** Warning ** Entered Humidity Ratio invalid (PsyTwbFnTdbWPb)
+   *************  **   ~~~   **   This error occurred 14 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=-999. []  Min=-999. []
+   *************
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Loads Initialization did not Converge
+   ************* ..1) very high thermal mass such as very thick concrete (solution: increase max number of warmup
+   ************* ..   days in the BUILDING object);
+   ************* ..2) moderate mass and inadequate space conditioning such that the building keeps getting warmer
+   ************* ..   and warmer on successive days (solution: add HVAC, check building thermal properties,
+   ************* ..   check if infiltration is included, make sure HVAC properly controlled);
+   ************* ..3) a soil layer modeled below the concrete slab - (solution remove this layer and read about
+   ************* ..   ground temperatures in the Auxiliary Programs document).
+   ************* ..4) unreasonable (too small) limits in the BUILDING object for temperature (.4 default) or
+   ************* ..   loads tolerances (.04 default)
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 8 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 4 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 849 Warning; 1318 Severe Errors; Elapsed Time=01hr 35min 44.03sec

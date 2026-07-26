@@ -154,16 +154,22 @@ class EcoLoopOrchestrator:
             
             parsed_actions = []
             try:
+                # 1. Strip markdown
                 clean_json = llm_response.replace('```json', '').replace('```', '').strip()
+                
+                # 2. Strip single-line comments (//) which crash json.loads
+                clean_json = re.sub(r'//.*', '', clean_json)
+                
                 try:
                     decision = json.loads(clean_json)
                 except json.JSONDecodeError:
+                    # 3. Fallback: Extract just the dictionary brackets
                     match = re.search(r'\{.*\}', clean_json, re.DOTALL)
                     if match:
                         decision = json.loads(match.group(0))
                     else:
                         raise ValueError("No JSON object detected in LLM response.")
-                
+                        
                 parsed_actions = decision.get("actions", [])
                 for action in parsed_actions:
                     zone = action.get("zone")

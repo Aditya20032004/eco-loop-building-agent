@@ -111,7 +111,7 @@ RunPeriod,
     1,                        !- Begin Day of Month
     ,                         !- Begin Year
     7,                        !- End Month
-    3,                        !- End Day of Month
+    7,                        !- End Day of Month
     ,                         !- End Year
     Sunday,                   !- Day of Week for Start Day
     No,                       !- Use Weather File Holidays and Special Days
@@ -7316,7 +7316,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7330,7 +7330,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7344,7 +7344,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7358,7 +7358,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7372,7 +7372,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7386,7 +7386,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7400,7 +7400,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7428,7 +7428,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7442,7 +7442,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7456,7 +7456,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7470,7 +7470,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7484,7 +7484,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7498,7 +7498,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7512,7 +7512,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -7526,7 +7526,7 @@ ZoneInfiltration:DesignFlowRate,
     Flow/ExteriorWallArea,    !- Design Flow Rate Calculation Method
     0,                        !- Design Flow Rate
     ,                         !- Flow per Zone Floor Area
-    5.695723e-04,             !- Flow per Exterior Surface Area
+    0.0005695723,             !- Flow per Exterior Surface Area
     ,                         !- Air Changes per Hour
     0,                        !- Constant Term Coefficient
     0,                        !- Temperature Term Coefficient
@@ -11284,6 +11284,20 @@ OutputControl:Table:Style,
 OutputControl:ReportingTolerances,
     0.556,                    !- Tolerance for Time Heating Setpoint Not Met
     0.556;                    !- Tolerance for Time Cooling Setpoint Not Met
+
+OUTPUT:VARIABLE,
+    Core_bottom,              !- Key Value
+    Zone Mean Air Temperature,    !- Variable Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    Core_mid,                 !- Key Value
+    Zone Mean Air Temperature,    !- Variable Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:METER,
+    Electricity:Facility,     !- Key Name
+    Hourly;                   !- Reporting Frequency
 
 Meter:Custom,
     Wired_LTG_Electricity,    !- Name

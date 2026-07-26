@@ -37,7 +37,7 @@
  InstMeterCacheSize=        1000
  ClippingAlgorithm=SutherlandHodgman
  MonthlyFieldSetInputCount=         446
- NumConsideredOutputVariables=         282
+ NumConsideredOutputVariables=         284
  MaxConsideredOutputVariables=       10000
  numActuatorsUsed=           7
  numEMSActuatorsAvailable=        3117
