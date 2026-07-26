@@ -1,5 +1,7 @@
 # 🌿 Eco-Loop AI: Autonomous Multi-Zone HVAC & Carbon-Aware Building Orchestration
 
+
+
 > **Eco-Loop AI** is an advanced, closed-loop agentic building orchestrator that integrates the U.S. Department of Energy's **EnergyPlus** simulation engine with a local cognitive LLM agent (**Qwen2.5:14b**) and real-time grid carbon signals. It dynamically optimizes commercial HVAC setpoints to minimize energy consumption and carbon emissions while strictly enforcing occupant comfort and grid stability.
 
 ---
@@ -13,6 +15,13 @@
 * **Dashboard & Visualization:** Streamlit, Plotly, Pandas.
 
 ---
+
+# Eco-Loop AI: Autonomous Multi-Zone HVAC Orchestration
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_Source_Code-black?logo=GitHub)](https://github.com/aditya20032004/eco-loop-building-agent)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aditya20032004-eco-loop-building-agent-srcapp-ma9mtx.streamlit.app/)
+
+> **Eco-Loop Building Agents** is a live, closed-loop building-energy control system that replaces rigid BMS schedules with a local Qwen2.5:14b LLM.
 
 ## 🚀 Core Features & Innovations
 

@@ -9,9 +9,9 @@ from config import OUTPUT_DIR_base, OUTPUT_DIR_AI, OUTPUT_DIR
 
 # Adds a clean, clickable GitHub badge to your sidebar or main page
 st.sidebar.markdown(
-    "[![View on GitHub](https://img.shields.io/badge/GitHub-View_Repository-blue?logo=GitHub)](https://github.com/YOUR_USERNAME/eco-loop-building-agent)"
+    "### 🔗 Project Links\n"
+    "[![View on GitHub](https://img.shields.io/badge/GitHub-View_Source_Code-black?logo=GitHub)](https://github.com/aditya20032004/eco-loop-building-agent)"
 )
-
 # ============================================================
 # PAGE CONFIG + VISUAL IDENTITY
 # ------------------------------------------------------------
